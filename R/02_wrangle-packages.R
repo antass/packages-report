@@ -32,7 +32,7 @@ ipt <- read_csv(here("data/installed-packages.csv")) %>%
 ## they are old output from me (Jenny)
 ## they are just examples
 
-apt_freqtable <- apt %>%
+apt_freqtable <- ipt %>%
   count(Built) %>%
   mutate(prop = n / sum(n)) %>%
-  write_csv(apt_freqtable, here("data", "add-on-packages-freqtable.csv"))
+  write_csv(here("data", "add-on-packages-freqtable.csv"))

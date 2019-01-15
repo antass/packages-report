@@ -1,3 +1,5 @@
+library(here)
+
 # Get / make data
 source(here("R/01_write-installed-packages.R"))
 
